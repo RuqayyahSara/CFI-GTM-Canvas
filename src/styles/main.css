@@ -22,8 +22,13 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--surface);
   color: var(--on-surface);
+  min-height: 100vh;
 }
 
 img {
   max-width: 100%;
+}
+
+svg {
+  fill: inherit;
 }

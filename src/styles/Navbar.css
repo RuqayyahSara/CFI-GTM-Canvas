@@ -48,7 +48,7 @@ nav {
 
 @media (min-width: 600px) {
   nav {
-    margin: 20px;
+    margin: 40px;
 
     ul {
       gap: 20px;
