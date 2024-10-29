@@ -1,0 +1,102 @@
+.home {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .heroHeading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins';
+      margin: 20px 0;
+
+      span {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      .line1,
+      .line2,
+      .line3 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .line3 {
+        text-decoration: underline;
+      }
+
+      span.iconHorizontal {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .alignBottom {
+        margin-top: 30px;
+      }
+    }
+
+    .heroSubHeading {
+      font-size: 2rem;
+      font-weight: bold;
+
+      span {
+        color: var(--clr-orange);
+        font-style: italic;
+      }
+    }
+
+    .heroParagraph {
+      padding: 20px;
+      text-align: center;
+      max-width: 600px;
+      color: rgba(35, 35, 35, 0.79);
+      font-weight: 400;
+
+      p {
+        color: var(--clr-green);
+      }
+    }
+
+    .cta {
+      button {
+        background-color: #232323;
+        color: white;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+
+        svg {
+          fill: white;
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .home {
+    .hero {
+      .heroHeading {
+        span {
+          font-size: 3.5rem;
+        }
+
+        .line1,
+        .line2,
+        .line3 {
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
