@@ -10,11 +10,7 @@
   --surface: white;
   --on-surface: black;
   --clr-orange: #fb6514;
-
-  @media (prefers-color-scheme: dark) {
-    --surface: #121212;
-    --on-surface: white;
-  }
+  --clr-green: #11a858;
 }
 
 body {
