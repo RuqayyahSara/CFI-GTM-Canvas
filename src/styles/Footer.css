@@ -43,6 +43,7 @@ footer {
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
           padding: 6px 15px;
+          max-width: 200px;
         }
       }
 
