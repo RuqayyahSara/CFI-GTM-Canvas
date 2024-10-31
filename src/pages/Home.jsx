@@ -363,6 +363,38 @@ export default function Home() {
             <img src='/star.svg' alt='star' />
           </div>
         </section>
+
+        <section className='handbook'>
+          <div className='handbookContainer'>
+            <img src='/monitor.png' alt='monitor' />
+
+            <div className='content'>
+              <p className='heading'>
+                Dive into the <br /> GTM handbook.
+              </p>
+              <p className='text'>
+                Grab the comprehensive guide to get your business ready for a
+                successful Go To Market Strategy.
+              </p>
+              <div className='buttons'>
+                <button className='active'>
+                  GTM Canvas
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    height='24px'
+                    viewBox='0 -960 960 960'
+                    width='24px'
+                    fill='#FFFFFF'
+                  >
+                    <path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' />
+                  </svg>
+                </button>
+
+                <button>GTM Handbook</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </>

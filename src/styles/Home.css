@@ -300,13 +300,68 @@
       align-items: center;
       gap: 5px;
       overflow: hidden;
-      scale: 1.01;
+      border-radius: 5px;
       font-family: 'Poppins';
       font-weight: 500;
 
       img {
         height: 34px;
         width: 34px;
+      }
+    }
+  }
+
+  .handbook {
+    padding: 20px;
+
+    .handbookContainer {
+      background-color: #edefec;
+      padding: 20px;
+      border-radius: 20px;
+
+      .content {
+        .heading {
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 2rem;
+          display: inline-block;
+          margin-bottom: 2px;
+        }
+
+        .text {
+          color: var(--clr-light-gray);
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+          background-color: black;
+          padding: 6px;
+          font-family: 'Poppins';
+          width: max-content;
+
+          button {
+            border-radius: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: inherit;
+            border: none;
+            padding: 5px 10px;
+
+            &.active {
+              background-color: var(--clr-orange);
+
+              svg {
+                fill: white;
+                rotate: -45deg;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -389,6 +444,25 @@
 
       div {
         rotate: -3.25deg;
+      }
+    }
+
+    .handbook {
+      padding: 40px 100px;
+
+      .handbookContainer {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        img,
+        .content {
+          flex: 1;
+        }
+
+        img {
+          max-width: 40vw;
+        }
       }
     }
   }
