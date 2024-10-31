@@ -296,7 +296,36 @@ export default function Home() {
         </section>
 
         <section className='certification'>
-          <div className='certificationContent'></div>
+          <div className='certificationContent'>
+            <p className='heading'>Certification</p>
+            <p className='subHeading'>
+              Accelerate Your Career. <br /> Become A Certified GTM Pro.
+            </p>
+            <p className='earn'>
+              Earn your GTM certification and showcase your expertise. Gain the
+              edge in developing and implementing effective go-to-market
+              strategies.
+            </p>
+
+            <p className='title'>Why Get Certified with Us?</p>
+            <ul>
+              <li>
+                <strong>Master GTM:</strong> Industry led approach with
+                practical action items, methods and frameworks to master the art
+                & science of GTM.
+              </li>
+              <li>
+                <strong>Industry Demand:</strong> Everyday, the industry needs
+                thousands of GTM strategy consultants with certified skills.
+              </li>
+              <li>
+                <strong>Professional Recognition:</strong> Become a Certified
+                GTM Strategy Consultant and join the industry.
+              </li>
+            </ul>
+
+            <button>Book A Session</button>
+          </div>
           <img src='/certification.png' alt='certification' />
         </section>
       </div>
