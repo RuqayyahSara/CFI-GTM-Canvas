@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className='home'>
-        <div className='hero'>
+        <section className='hero'>
           <div className='heroHeading'>
             <div className='line1'>
               <svg
@@ -174,7 +174,19 @@ export default function Home() {
               </svg>
             </button>
           </div>
-        </div>
+        </section>
+
+        <section className='companiesSection'>
+          <span>250+ Companies Use GTM Canvas including</span>
+          <div className='companies'>
+            <img src='/Leadmagic.svg' alt='Leadmagic' />
+            <img src='/activar.svg' alt='Activar' />
+            <img src='/circularise.svg' alt='Circularise' />
+            <img src='/pixiebrix.svg' alt='pixiebrix' />
+            <img src='/bvrit.svg' alt='bvrit' />
+            <img src='/mintit.svg' alt='mintit' />
+          </div>
+        </section>
       </div>
       <Footer />
     </>

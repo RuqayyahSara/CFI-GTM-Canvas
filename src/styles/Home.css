@@ -81,6 +81,37 @@
       }
     }
   }
+
+  .companiesSection {
+    text-align: center;
+    background-color: var(--clr-skin);
+    padding: 30px 15px;
+    margin: 10px 0;
+
+    span {
+      color: var(--clr-orange);
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+
+    .companies {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      img {
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -95,6 +126,14 @@
         .line2,
         .line3 {
           gap: 10px;
+        }
+      }
+    }
+
+    .companiesSection {
+      .companies {
+        img {
+          width: 150px;
         }
       }
     }
