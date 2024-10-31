@@ -81,6 +81,290 @@
       }
     }
   }
+
+  .companiesSection {
+    text-align: center;
+    background-color: var(--clr-skin);
+    padding: 30px 15px;
+    margin: 30px 0 50px;
+
+    span {
+      color: var(--clr-orange);
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+
+    .companies {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      img {
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .workshops {
+    padding: 10px 30px;
+
+    .workshopContent {
+      .heading {
+        background-color: var(--clr-yellow);
+        font-family: 'Poppins';
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .subHeading {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: block;
+      }
+
+      div {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .left,
+        .right {
+          flex: 1;
+        }
+
+        .title {
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+        }
+
+        .content {
+          color: var(--clr-light-gray);
+        }
+      }
+
+      button {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        font-weight: bold;
+        display: block;
+      }
+    }
+
+    .workshopImage {
+      width: 100%;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+  }
+
+  .consultation {
+    padding: 10px 30px;
+
+    .consultationContent {
+      .heading {
+        background-color: var(--clr-purple);
+        font-family: 'Poppins';
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        display: inline-block;
+        margin-bottom: 2px;
+      }
+
+      .subHeading {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .title {
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+      }
+
+      .content {
+        color: var(--clr-light-gray);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: var(--clr-light-gray);
+
+          svg {
+            fill: #02b657;
+          }
+        }
+      }
+
+      button {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        font-weight: bold;
+        display: block;
+        margin: 20px 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .certification {
+    padding: 10px 30px;
+
+    .certificationContent {
+      .heading {
+        background-color: var(--clr-light-green);
+        font-family: 'Poppins';
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        display: inline-block;
+        margin-bottom: 2px;
+      }
+
+      .subHeading {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .earn {
+        font-weight: 500;
+      }
+
+      .title {
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        li {
+          color: var(--clr-light-gray);
+        }
+      }
+
+      button {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        font-weight: bold;
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .banner {
+    background-color: var(--clr-orange);
+    padding: 20px 0;
+    margin: 40px 0;
+
+    div {
+      background-color: white;
+      rotate: -5deg;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      overflow: hidden;
+      border-radius: 5px;
+      font-family: 'Poppins';
+      font-weight: 500;
+
+      img {
+        height: 34px;
+        width: 34px;
+      }
+    }
+  }
+
+  .handbook {
+    padding: 20px;
+
+    .handbookContainer {
+      background-color: #edefec;
+      padding: 20px;
+      border-radius: 20px;
+
+      .content {
+        .heading {
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 2rem;
+          display: inline-block;
+          margin-bottom: 2px;
+        }
+
+        .text {
+          color: var(--clr-light-gray);
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+          background-color: black;
+          padding: 6px;
+          font-family: 'Poppins';
+          width: max-content;
+
+          button {
+            border-radius: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: inherit;
+            border: none;
+            padding: 5px 10px;
+
+            &.active {
+              background-color: var(--clr-orange);
+
+              svg {
+                fill: white;
+                rotate: -45deg;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -95,6 +379,89 @@
         .line2,
         .line3 {
           gap: 10px;
+        }
+      }
+    }
+
+    .companiesSection {
+      .companies {
+        img {
+          width: 150px;
+        }
+      }
+    }
+
+    .workshops {
+      display: flex;
+      gap: 80px;
+      padding: 40px 100px;
+
+      .workshopContent,
+      img {
+        flex: 1;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        max-width: 40vw;
+      }
+    }
+
+    .consultation {
+      display: flex;
+      gap: 80px;
+      padding: 40px 100px;
+
+      .consultationContent,
+      img {
+        flex: 1;
+      }
+
+      img {
+        order: -1;
+      }
+    }
+
+    .certification {
+      display: flex;
+      gap: 80px;
+      padding: 40px 100px;
+
+      .certificationContent,
+      img {
+        flex: 1;
+      }
+
+      img {
+        max-width: 40vw;
+      }
+    }
+
+    .banner {
+      padding: 40px 0;
+
+      div {
+        rotate: -3.25deg;
+      }
+    }
+
+    .handbook {
+      padding: 40px 100px;
+
+      .handbookContainer {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        img,
+        .content {
+          flex: 1;
+        }
+
+        img {
+          max-width: 40vw;
         }
       }
     }

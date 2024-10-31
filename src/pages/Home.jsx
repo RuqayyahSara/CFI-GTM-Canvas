@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className='home'>
-        <div className='hero'>
+        <section className='hero'>
           <div className='heroHeading'>
             <div className='line1'>
               <svg
@@ -174,7 +174,227 @@ export default function Home() {
               </svg>
             </button>
           </div>
-        </div>
+        </section>
+
+        <section className='companiesSection'>
+          <span>250+ Companies Use GTM Canvas including</span>
+          <div className='companies'>
+            <img src='/Leadmagic.svg' alt='Leadmagic' />
+            <img src='/activar.svg' alt='Activar' />
+            <img src='/circularise.svg' alt='Circularise' />
+            <img src='/pixiebrix.svg' alt='pixiebrix' />
+            <img src='/bvrit.svg' alt='bvrit' />
+            <img src='/mintit.svg' alt='mintit' />
+          </div>
+        </section>
+
+        <section className='workshops'>
+          <div className='workshopContent'>
+            <span className='heading'>Workshops</span>
+            <span className='subHeading'>Unlocking GTM Mastery: </span>
+            <span className='subHeading'>
+              Mastery for Leaders and Innovators.
+            </span>
+            <div>
+              <div className='left'>
+                <p className='title'>Expert-Led GTM Workshops.</p>
+                <p className='content'>
+                  Immersive, hands-on workshops designed for emerging corporate
+                  leaders, entrepreneurs, product managers, and marketing
+                  professionals.
+                </p>
+              </div>
+              <div className='right'>
+                <p className='title'>
+                  Actionable insights and real-world case studies.
+                </p>
+                <p className='content'>
+                  Learn the art and science of creating a robust Go-To-Market
+                  (GTM) strategy through practical exercises and real-world case
+                  studies.
+                </p>
+              </div>
+            </div>
+
+            <button>Book A Session</button>
+          </div>
+
+          <img src='/workshop.png' alt='workshop' className='workshopImage' />
+        </section>
+
+        <section className='consultation'>
+          <div className='consultationContent'>
+            <p className='heading'>Consultation</p>
+
+            <p className='subHeading'>
+              Expert Consulting <br /> For Your Product&apos;s Success.
+            </p>
+
+            <p className='title'>Elevate your product&apos;s trajectory.</p>
+
+            <p className='content'>
+              Navigating the complexities of a new product launch can be
+              daunting. Our consulting services, guided by the proven GTM Canvas
+              framework, offer tailored strategies to help startups and emerging
+              businesses achieve significant growth.
+            </p>
+
+            <ul>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Product Discovery</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Customized GTM Strategy</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Develop Effective Marketing Channels</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Growth Planning</span>
+              </li>
+            </ul>
+
+            <button>Book A Session</button>
+          </div>
+          <img src='/consultation.svg' alt='consultation' />
+        </section>
+
+        <section className='certification'>
+          <div className='certificationContent'>
+            <p className='heading'>Certification</p>
+            <p className='subHeading'>
+              Accelerate Your Career. <br /> Become A Certified GTM Pro.
+            </p>
+            <p className='earn'>
+              Earn your GTM certification and showcase your expertise. Gain the
+              edge in developing and implementing effective go-to-market
+              strategies.
+            </p>
+
+            <p className='title'>Why Get Certified with Us?</p>
+            <ul>
+              <li>
+                <strong>Master GTM:</strong> Industry led approach with
+                practical action items, methods and frameworks to master the art
+                & science of GTM.
+              </li>
+              <li>
+                <strong>Industry Demand:</strong> Everyday, the industry needs
+                thousands of GTM strategy consultants with certified skills.
+              </li>
+              <li>
+                <strong>Professional Recognition:</strong> Become a Certified
+                GTM Strategy Consultant and join the industry.
+              </li>
+            </ul>
+
+            <button>Book A Session</button>
+          </div>
+          <img src='/certification.png' alt='certification' />
+        </section>
+
+        <section className='banner'>
+          <div>
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+          </div>
+        </section>
+
+        <section className='handbook'>
+          <div className='handbookContainer'>
+            <img src='/monitor.png' alt='monitor' />
+
+            <div className='content'>
+              <p className='heading'>
+                Dive into the <br /> GTM handbook.
+              </p>
+              <p className='text'>
+                Grab the comprehensive guide to get your business ready for a
+                successful Go To Market Strategy.
+              </p>
+              <div className='buttons'>
+                <button className='active'>
+                  GTM Canvas
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    height='24px'
+                    viewBox='0 -960 960 960'
+                    width='24px'
+                    fill='#FFFFFF'
+                  >
+                    <path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' />
+                  </svg>
+                </button>
+
+                <button>GTM Handbook</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </>

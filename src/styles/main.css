@@ -11,6 +11,11 @@
   --on-surface: black;
   --clr-orange: #fb6514;
   --clr-green: #11a858;
+  --clr-skin: #ffd3ba;
+  --clr-yellow: #fac506;
+  --clr-light-gray: #232323c9;
+  --clr-purple: #c6b9fc;
+  --clr-light-green: #51dc92;
 }
 
 body {
