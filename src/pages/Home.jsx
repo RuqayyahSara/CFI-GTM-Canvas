@@ -221,6 +221,79 @@ export default function Home() {
 
           <img src='/workshop.png' alt='workshop' className='workshopImage' />
         </section>
+
+        <section className='consultation'>
+          <div className='consultationContent'>
+            <p className='heading'>Consultation</p>
+
+            <p className='subHeading'>
+              Expert Consulting <br /> For Your Product&apos;s Success.
+            </p>
+
+            <p className='title'>Elevate your product&apos;s trajectory.</p>
+
+            <p className='content'>
+              Navigating the complexities of a new product launch can be
+              daunting. Our consulting services, guided by the proven GTM Canvas
+              framework, offer tailored strategies to help startups and emerging
+              businesses achieve significant growth.
+            </p>
+
+            <ul>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Product Discovery</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Customized GTM Strategy</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Develop Effective Marketing Channels</span>
+              </li>
+              <li>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  height='24px'
+                  viewBox='0 -960 960 960'
+                  width='24px'
+                  fill='#75FB4C'
+                >
+                  <path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q65 0 123 19t107 53l-58 59q-38-24-81-37.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-18-2-36t-6-35l65-65q11 32 17 66t6 70q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-56-216L254-466l56-56 114 114 400-401 56 56-456 457Z' />
+                </svg>
+                <span>Growth Planning</span>
+              </li>
+            </ul>
+
+            <button>Book A Session</button>
+          </div>
+          <img src='/consultation.svg' alt='consultation' />
+        </section>
       </div>
       <Footer />
     </>
