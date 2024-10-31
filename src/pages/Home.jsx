@@ -294,6 +294,11 @@ export default function Home() {
           </div>
           <img src='/consultation.svg' alt='consultation' />
         </section>
+
+        <section className='certification'>
+          <div className='certificationContent'></div>
+          <img src='/certification.png' alt='certification' />
+        </section>
       </div>
       <Footer />
     </>
