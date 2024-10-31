@@ -328,6 +328,41 @@ export default function Home() {
           </div>
           <img src='/certification.png' alt='certification' />
         </section>
+
+        <section className='banner'>
+          <div>
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+            <span>Idea</span>
+            <img src='/star.svg' alt='star' />
+            <span>Product</span>
+            <img src='/star.svg' alt='star' />
+            <span>Market</span>
+            <img src='/star.svg' alt='star' />
+            <span>Research</span>
+            <img src='/star.svg' alt='star' />
+            <span>Launch</span>
+            <img src='/star.svg' alt='star' />
+          </div>
+        </section>
       </div>
       <Footer />
     </>
