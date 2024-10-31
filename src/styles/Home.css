@@ -86,7 +86,7 @@
     text-align: center;
     background-color: var(--clr-skin);
     padding: 30px 15px;
-    margin: 10px 0;
+    margin: 30px 0 50px;
 
     span {
       color: var(--clr-orange);
@@ -112,6 +112,68 @@
       }
     }
   }
+
+  .workshops {
+    padding: 10px 30px;
+
+    .workshopContent {
+      .heading {
+        background-color: var(--clr-yellow);
+        font-family: 'Poppins';
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .subHeading {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: block;
+      }
+
+      div {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .left,
+        .right {
+          flex: 1;
+        }
+
+        .title {
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+        }
+
+        .content {
+          color: var(--clr-light-gray);
+        }
+      }
+
+      button {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        font-weight: bold;
+        display: block;
+      }
+    }
+
+    .workshopImage {
+      width: 100%;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -135,6 +197,16 @@
         img {
           width: 150px;
         }
+      }
+    }
+
+    .workshops {
+      display: flex;
+      gap: 40px;
+
+      .workshopContent,
+      img {
+        flex: 1;
       }
     }
   }

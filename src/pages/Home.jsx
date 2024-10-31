@@ -187,6 +187,40 @@ export default function Home() {
             <img src='/mintit.svg' alt='mintit' />
           </div>
         </section>
+
+        <section className='workshops'>
+          <div className='workshopContent'>
+            <span className='heading'>Workshops</span>
+            <span className='subHeading'>Unlocking GTM Mastery: </span>
+            <span className='subHeading'>
+              Mastery for Leaders and Innovators.
+            </span>
+            <div>
+              <div className='left'>
+                <p className='title'>Expert-Led GTM Workshops.</p>
+                <p className='content'>
+                  Immersive, hands-on workshops designed for emerging corporate
+                  leaders, entrepreneurs, product managers, and marketing
+                  professionals.
+                </p>
+              </div>
+              <div className='right'>
+                <p className='title'>
+                  Actionable insights and real-world case studies.
+                </p>
+                <p className='content'>
+                  Learn the art and science of creating a robust Go-To-Market
+                  (GTM) strategy through practical exercises and real-world case
+                  studies.
+                </p>
+              </div>
+            </div>
+
+            <button>Book A Session</button>
+          </div>
+
+          <img src='/workshop.png' alt='workshop' className='workshopImage' />
+        </section>
       </div>
       <Footer />
     </>
