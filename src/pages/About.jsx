@@ -32,6 +32,10 @@ export default function About() {
             </p>
           </div>
         </section>
+
+        <section className='section2'>
+          <img src='/aboutSection2.png' alt='aboutSection2' />
+        </section>
       </div>
       <Footer />
     </>

@@ -29,6 +29,10 @@
       }
     }
   }
+
+  .section2 {
+    padding: 20px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -60,6 +64,10 @@
           font-size: 2rem;
         }
       }
+    }
+
+    .section2 {
+      padding: 20px 60px;
     }
   }
 }
