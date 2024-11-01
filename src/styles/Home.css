@@ -311,6 +311,45 @@
     }
   }
 
+  .clients {
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins';
+      font-weight: 600;
+      gap: 10px;
+    }
+
+    .dots {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      span {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: black;
+
+        &.active {
+          background-color: var(--clr-orange);
+          scale: 2;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .clientsContainer {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   .handbook {
     padding: 20px;
 
@@ -445,6 +484,21 @@
 
       div {
         rotate: -3.25deg;
+      }
+    }
+
+    .clients {
+      margin: 100px 0;
+
+      .heading {
+        font-size: 2rem;
+        gap: 20px;
+      }
+
+      .clientsContainer {
+        img {
+          max-width: 30vw;
+        }
       }
     }
 
