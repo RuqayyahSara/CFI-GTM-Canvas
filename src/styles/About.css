@@ -33,6 +33,46 @@
   .section2 {
     padding: 20px;
   }
+
+  .section3 {
+    padding: 20px;
+    margin-bottom: 30px;
+
+    .section3Container {
+      background-color: #edefec;
+      border-radius: 20px;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 20px;
+
+      .heading {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      button {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        background-color: var(--clr-orange);
+
+        svg {
+          fill: white;
+          rotate: -45deg;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -66,8 +106,15 @@
       }
     }
 
-    .section2 {
+    .section2,
+    .section3 {
       padding: 20px 60px;
+    }
+
+    .section3 {
+      .section3Container {
+        padding: 80px;
+      }
     }
   }
 }

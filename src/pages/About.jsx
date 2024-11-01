@@ -36,6 +36,28 @@ export default function About() {
         <section className='section2'>
           <img src='/aboutSection2.png' alt='aboutSection2' />
         </section>
+
+        <section className='section3'>
+          <div className='section3Container'>
+            <span className='heading'>Let&apos;s Make Something Great</span>
+            <p>
+              If you&apos;re looking to advance your career and become a GTM
+              expert, <br /> we&apos;re excited to work together.
+            </p>
+            <button>
+              <span>Contact Us</span>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                height='24px'
+                viewBox='0 -960 960 960'
+                width='24px'
+                fill='#FFFFFF'
+              >
+                <path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' />
+              </svg>
+            </button>
+          </div>
+        </section>
       </div>
       <Footer />
     </>
