@@ -11,10 +11,11 @@ nav {
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 4.5rem;
     flex-shrink: 0;
     font-weight: bold;
-
+    margin-left: -50px;
+    
     span {
       color: var(--clr-orange);
     }

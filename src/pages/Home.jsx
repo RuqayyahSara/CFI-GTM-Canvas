@@ -1,8 +1,11 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import '../styles/Home.css'
+import { useState } from 'react'
 
 export default function Home() {
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <>
       <Navbar />
@@ -44,15 +47,17 @@ export default function Home() {
                 >
                   <path
                     d='M1.27465 19.1992C0.461568 19.9777 0.433564 21.268 1.2121 22.0811C1.99065 22.8941 3.28091 22.9221 4.094 22.1436L1.27465 19.1992ZM23.3119 2.91561C23.3364 1.79016 22.4438 0.857999 21.3184 0.833573L2.97809 0.435519C1.85264 0.411093 0.920485 1.30365 0.896059 2.4291C0.871632 3.55455 1.76419 4.48671 2.88964 4.51113L19.1921 4.86496L18.8383 21.1674C18.8138 22.2929 19.7064 23.225 20.8318 23.2495C21.9573 23.2739 22.8895 22.3813 22.9139 21.2559L23.3119 2.91561ZM4.094 22.1436L22.6838 4.3436L19.8645 1.39916L1.27465 19.1992L4.094 22.1436Z'
-                    fill='#232323'
+                    fill='white'
                   />
                 </svg>
-                <svg
+                <svg 
+                  className='horizontalLine'
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
                   height='5'
                   viewBox='0 0 24 5'
                   fill='none'
+                  style={{ marginTop: '25px' }}
                 >
                   <path
                     d='M2.68433 2.08545L21.4366 2.08545'
@@ -63,6 +68,7 @@ export default function Home() {
                 </svg>
               </span>
               <span>
+                {/* Blue circle */}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'
@@ -75,14 +81,19 @@ export default function Home() {
                     fill='#4B80F9'
                   />
                 </svg>
+                {/* X symbol between circles */}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  height='24px'
+                  height='28px'
                   viewBox='0 -960 960 960'
-                  width='24px'
+                  width='28px'
                   fill='#000000'
                 >
-                  <path d='M480-392 300-212q-18 18-44 18t-44-18q-18-18-18-44t18-44l180-180-180-180q-18-18-18-44t18-44q18-18 44-18t44 18l180 180 180-180q18-18 44-18t44 18q18 18 18 44t-18 44L568-480l180 180q18 18 18 44t-18 44q-18 18-44 18t-44-18L480-392Z' />
+                  <path
+                    d='M480-392 300-212q-18 18-44 18t-44-18q-18-18-18-44t18-44l180-180-180-180q-18-18-18-44t18-44q18-18 44-18t44 18l180 180 180-180q18-18 44-18t44 18q18 18 18 44t-18 44L568-480l180 180q18 18 18 44t-18 44q-18 18-44 18t-44-18L480-392Z'
+                    stroke='black'
+                    strokeWidth='160'
+                  />
                 </svg>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -93,100 +104,147 @@ export default function Home() {
                 >
                   <path
                     d='M27.8959 14.4986C27.9057 16.3178 27.5548 18.121 26.8633 19.8047C26.1718 21.4884 25.1534 23.0195 23.8666 24.3099C22.6046 25.5713 21.1083 26.576 19.4612 27.268C17.7621 27.985 15.9341 28.3492 14.0888 28.3386C12.2443 28.3429 10.4175 27.9789 8.71645 27.268C7.06757 26.5793 5.5707 25.5743 4.31108 24.3099C2.34646 22.378 1.00403 19.9064 0.455139 17.2107C-0.0937551 14.5151 0.175782 11.7176 1.22935 9.17534C2.28292 6.63303 4.07272 4.46115 6.37033 2.93707C8.66794 1.41299 11.3691 0.60576 14.1291 0.618387C15.9743 0.607831 17.8023 0.972245 19.5015 1.68925C21.146 2.38596 22.6414 3.39002 23.9069 4.64728C25.1805 5.90888 26.1895 7.41044 26.8752 9.06439C27.5845 10.7873 27.9319 12.6367 27.8959 14.4986Z'
-                    fill='#3AB170'
+                    fill='#11A858'
                   />
                 </svg>
               </span>
             </div>
 
             <div className='line2'>
-              <span>Market</span>
-              <img src='/heroHeadingLine2.svg' alt='svg' />
+              <div className='market-container'>
+                <span>Market</span>
+                <img src='/heroHeadingLine2.svg' alt='svg' />
+              </div>
             </div>
 
             <div className='line3'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='27'
-                height='52'
-                viewBox='0 0 27 52'
-                fill='none'
-              >
-                <path
-                  d='M0.739746 0.914307H3.90405C9.81954 0.914307 15.4928 3.26423 19.6757 7.44712C23.8585 11.63 26.2084 17.3032 26.2084 23.2187V29.5671C26.2084 35.4826 23.8585 41.1558 19.6757 45.3387C15.4928 49.5216 9.81954 51.8715 3.90405 51.8715H0.739746V0.914307Z'
-                  fill='#11A858'
-                />
-              </svg>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='25'
-                height='52'
-                viewBox='0 0 25 52'
-                fill='none'
-              >
-                <path
-                  d='M0.615967 0.914307H3.60422C9.19061 0.914307 14.5482 3.2635 18.4984 7.44509C22.4485 11.6267 24.6678 17.2981 24.6678 23.2118L24.6678 29.574C24.6678 35.4877 22.4485 41.1591 18.4984 45.3407C14.5482 49.5223 9.19061 51.8715 3.60422 51.8715H0.615964L0.615967 0.914307Z'
-                  fill='#A837DD'
-                />
-              </svg>
-              <span>Faster</span>
-              <svg
-                className='alignBottom'
-                xmlns='http://www.w3.org/2000/svg'
-                width='13'
-                height='13'
-                viewBox='0 0 13 13'
-                fill='none'
-              >
-                <path
-                  d='M6.6989 0.263114C6.43097 0.173363 6.26699 0.173363 5.99906 0.263114C5.34543 0.482023 5.37378 1.86734 5.57576 3.23415C5.0644 1.95061 4.39355 0.738249 3.71837 0.876977C3.4416 0.933876 3.29977 1.01615 3.11307 1.22826C2.66412 1.73834 3.35735 2.89618 4.20175 3.96431C3.13173 3.12228 1.9724 2.43154 1.46333 2.88166C1.25166 3.0688 1.16967 3.21079 1.11341 3.48768C0.977099 4.15861 2.17354 4.82229 3.44843 5.32951C2.09071 5.13131 0.722723 5.10775 0.505302 5.75692C0.41555 6.02484 0.41555 6.18882 0.505302 6.45675C0.722723 7.10592 2.09071 7.08236 3.44843 6.88415C2.17354 7.39138 0.977058 8.05506 1.11337 8.72598C1.16967 9.00288 1.25166 9.14486 1.46333 9.33201C1.9724 9.78209 3.13177 9.09142 4.20175 8.24936C3.35735 9.31753 2.66412 10.4753 3.11311 10.9854C3.29981 11.1975 3.44164 11.2798 3.71837 11.3367C4.3936 11.4755 5.06444 10.263 5.57584 8.97948C5.37382 10.3463 5.34547 11.7316 5.9991 11.9506C6.26703 12.0403 6.43101 12.0403 6.69894 11.9506C7.35257 11.7316 7.32422 10.3463 7.1222 8.97939C7.63361 10.263 8.30445 11.4755 8.97967 11.3367C9.25644 11.2798 9.39827 11.1975 9.58497 10.9854C10.0339 10.4753 9.34069 9.31753 8.49629 8.24936C9.56631 9.09142 10.7256 9.78209 11.2347 9.33201C11.4464 9.14486 11.5284 9.00288 11.5847 8.72598C11.721 8.05506 10.5245 7.39138 9.24965 6.88415C10.6073 7.08236 11.9753 7.10592 12.1927 6.45675C12.2825 6.18882 12.2825 6.02484 12.1927 5.75692C11.9753 5.10775 10.6073 5.13131 9.24965 5.32951C10.5245 4.82229 11.721 4.15861 11.5847 3.48768C11.5284 3.21079 11.4464 3.0688 11.2347 2.88166C10.7256 2.43154 9.56627 3.12224 8.49625 3.96431C9.34065 2.89618 10.0339 1.73834 9.58493 1.22826C9.39823 1.01615 9.25644 0.933876 8.97967 0.876977C8.30445 0.738249 7.63361 1.95065 7.1222 3.23423C7.32422 1.86738 7.35253 0.482023 6.6989 0.263114Z'
-                  fill='#232323'
-                />
-              </svg>
+              <div className='faster-container'>
+                <div className='semicircles'>
+                  <svg className="semicircle-green"
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='40'
+                    height='162'
+                    viewBox='0 0 30 52'
+                    fill='none'
+                  >
+                    <path
+                      d='M0.739746 0.914307H3.90405C9.81954 0.914307 15.4928 3.26423 19.6757 7.44712C23.8585 11.63 26.2084 17.3032 26.2084 23.2187V29.5671C26.2084 35.4826 23.8585 41.1558 19.6757 45.3387C15.4928 49.5216 9.81954 51.8715 3.90405 51.8715H0.739746V0.914307Z'
+                      fill='#11A858'
+                    />
+                  </svg>
+                  <svg className="semicircle-purple"
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='40'
+                    height='162'
+                    viewBox='0 0 30 52'
+                    fill='none'
+                  >
+                    <path
+                      d='M0.615967 0.914307H3.60422C9.19061 0.914307 14.5482 3.2635 18.4984 7.44509C22.4485 11.6267 24.6678 17.2981 24.6678 23.2118L24.6678 29.574C24.6678 35.4877 22.4485 41.1591 18.4984 45.3407C14.5482 49.5223 9.19061 51.8715 3.60422 51.8715H0.615964L0.615967 0.914307Z'
+                      fill='#A837DD'
+                    />
+                  </svg>
+                </div>
+                <span>Faster</span>
+                <svg className='underline'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='320'
+                  height='5'
+                  viewBox='0 -2 250 8'
+                  fill='none'
+                >
+                  <path
+                    d='M2 2H318'
+                    stroke='#232323'
+                    strokeWidth='10'
+                    strokeLinecap='round'
+                  />
+                </svg>
+                <svg className='alignBottom'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='13'
+                  height='13'
+                  viewBox='0 0 39 12'
+                  fill='none'
+                >
+                  <path
+                    d='M6.6989 0.263114C6.43097 0.173363 6.26699 0.173363 5.99906 0.263114C5.34543 0.482023 5.37378 1.86734 5.57576 3.23415C5.0644 1.95061 4.39355 0.738249 3.71837 0.876977C3.4416 0.933876 3.29977 1.01615 3.11307 1.22826C2.66412 1.73834 3.35735 2.89618 4.20175 3.96431C3.13173 3.12228 1.9724 2.43154 1.46333 2.88166C1.25166 3.0688 1.16967 3.21079 1.11341 3.48768C0.977099 4.15861 2.17354 4.82229 3.44843 5.32951C2.09071 5.13131 0.722723 5.10775 0.505302 5.75692C0.41555 6.02484 0.41555 6.18882 0.505302 6.45675C0.722723 7.10592 2.09071 7.08236 3.44843 6.88415C2.17354 7.39138 0.977058 8.05506 1.11337 8.72598C1.16967 9.00288 1.25166 9.14486 1.46333 9.33201C1.9724 9.78209 3.13177 9.09142 4.20175 8.24936C3.35735 9.31753 2.66412 10.4753 3.11311 10.9854C3.29981 11.1975 3.44164 11.2798 3.71837 11.3367C4.3936 11.4755 5.06444 10.263 5.57584 8.97948C5.37382 10.3463 5.34547 11.7316 5.9991 11.9506C6.26703 12.0403 6.43101 12.0403 6.69894 11.9506C7.35257 11.7316 7.32422 10.3463 7.1222 8.97939C7.63361 10.263 8.30445 11.4755 8.97967 11.3367C9.25644 11.2798 9.39827 11.1975 9.58497 10.9854C10.0339 10.4753 9.34069 9.31753 8.49629 8.24936C9.56631 9.09142 10.7256 9.78209 11.2347 9.33201C11.4464 9.14486 11.5284 9.00288 11.5847 8.72598C11.721 8.05506 10.5245 7.39138 9.24965 6.88415C10.6073 7.08236 11.9753 7.10592 12.1927 6.45675C12.2825 6.18882 12.2825 6.02484 12.1927 5.75692C11.9753 5.10775 10.6073 5.13131 9.24965 5.32951C10.5245 4.82229 11.721 4.15861 11.5847 3.48768C11.5284 3.21079 11.4464 3.0688 11.2347 2.88166C10.7256 2.43154 9.56627 3.12224 8.49625 3.96431C9.34065 2.89618 10.0339 1.73834 9.58493 1.22826C9.39823 1.01615 9.25644 0.933876 8.97967 0.876977C8.30445 0.738249 7.63361 1.95065 7.1222 3.23423C7.32422 1.86738 7.35253 0.482023 6.6989 0.263114Z'
+                    fill='#232323'
+                  />
+                </svg>
+              </div>
             </div>
           </div>
 
-          <div className='heroSubHeading'>
-            GTM<span>Canvas</span>
-          </div>
 
           <div className='heroParagraph'>
-            <span>
-              Go to Market (GTM) Canvas is the strategic way to develop your Go
-              to Market Strategy for your startup/idea. This works well for all
-              idea stage products and services across all sectors and
-              industries.
-            </span>
-            <p>[open source]</p>
+            <div className='heroSubHeading'>
+              <span>GTM</span><span style={{ fontStyle: "italic", color: "rgb(254, 107, 54)" }}>Canvas</span>
+            </div>
+            <div className='paragraph-container'>
+              <span>
+                Go to Market (GTM) Canvas is the strategic way to develop your Go
+                to Market Strategy for your startup/idea. This works well for all
+                idea stage products and services across all sectors and
+                industries.
+              </span>
+              <p>[open source]</p>
+            </div>
           </div>
 
-          <div className='cta'>
+          <div className="cta">
             <button>
               <span>Download</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                height='24px'
-                viewBox='0 -960 960 960'
-                width='24px'
-                fill='#000000'
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                fill='none'
+                style={{ marginTop: '18px' }}
               >
-                <path d='M594-417H189q-26 0-44.5-18.5T126-480q0-26 18.5-44.5T189-543h405l-77-77q-18-18-18-44t18-44q18-18 44-18t44 18l184 183q9 9 14 21t5 24q0 12-5 24t-14 21L605-252q-18 18-44 18t-44-18q-18-18-18-44t18-44l77-77Z' />
+                <path
+                  d='M1.27465 19.1992C0.461568 19.9777 0.433564 21.268 1.2121 22.0811C1.99065 22.8941 3.28091 22.9221 4.094 22.1436L1.27465 19.1992ZM23.3119 2.91561C23.3364 1.79016 22.4438 0.857999 21.3184 0.833573L2.97809 0.435519C1.85264 0.411093 0.920485 1.30365 0.896059 2.4291C0.871632 3.55455 1.76419 4.48671 2.88964 4.51113L19.1921 4.86496L18.8383 21.1674C18.8138 22.2929 19.7064 23.225 20.8318 23.2495C21.9573 23.2739 22.8895 22.3813 22.9139 21.2559L23.3119 2.91561ZM4.094 22.1436L22.6838 4.3436L19.8645 1.39916L1.27465 19.1992L4.094 22.1436Z'
+                  fill='white'
+                />
               </svg>
             </button>
+            <div className="triangles">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 0L0 0L100 100L100 0Z" fill="#FF5C35" />
+              </svg>
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 0L0 0L100 100L100 0Z" fill="#4285F4" />
+              </svg>
+            </div>
           </div>
         </section>
 
-        <section className='companiesSection'>
+        <section className="companiesSection">
           <span>250+ Companies Use GTM Canvas including</span>
-          <div className='companies'>
-            <img src='/Leadmagic.svg' alt='Leadmagic' />
-            <img src='/activar.svg' alt='Activar' />
-            <img src='/circularise.svg' alt='Circularise' />
-            <img src='/pixiebrix.svg' alt='pixiebrix' />
-            <img src='/bvrit.svg' alt='bvrit' />
-            <img src='/mintit.svg' alt='mintit' />
+          <div className="companies-marquee">
+            <div className="companies-track">
+              {/* Double the images to create seamless loop */}
+              <div className="companies">
+                <marquee>
+                  <img src="/Leadmagic.svg" alt="Leadmagic" />
+                  <img src="/activar.svg" alt="Activar" />
+                  <img src="/circularise.svg" alt="Circularise" />
+                  <img src="/pixiebrix.svg" alt="pixiebrix" />
+                  <img src="/bvrit.svg" alt="bvrit" />
+                  <img src="/mintit.svg" alt="mintit" />
+                  <img src="/Leadmagic.svg" alt="Leadmagic" />
+                  <img src="/activar.svg" alt="Activar" />
+                  <img src="/circularise.svg" alt="Circularise" />
+                  <img src="/pixiebrix.svg" alt="pixiebrix" />
+                  <img src="/bvrit.svg" alt="bvrit" />
+                  <img src="/mintit.svg" alt="mintit" />
+                </marquee>
+              </div>
+            </div>
           </div>
-        </section>
+        </section>;
+
 
         <section className='workshops'>
           <div className='workshopContent'>
@@ -326,41 +384,34 @@ export default function Home() {
 
             <button>Book A Session</button>
           </div>
-          <img src='/certification.png' alt='certification' />
+          <img src='/certification.png' alt='certification' style={{ width: '100%', height: '100%', marginTop: '155px' }} />
         </section>
 
         <section className='banner'>
           <div>
-            <span>Idea</span>
-            <img src='/star.svg' alt='star' />
-            <span>Product</span>
-            <img src='/star.svg' alt='star' />
-            <span>Market</span>
-            <img src='/star.svg' alt='star' />
-            <span>Research</span>
-            <img src='/star.svg' alt='star' />
-            <span>Launch</span>
-            <img src='/star.svg' alt='star' />
-            <span>Idea</span>
-            <img src='/star.svg' alt='star' />
-            <span>Product</span>
-            <img src='/star.svg' alt='star' />
-            <span>Market</span>
-            <img src='/star.svg' alt='star' />
-            <span>Research</span>
-            <img src='/star.svg' alt='star' />
-            <span>Launch</span>
-            <img src='/star.svg' alt='star' />
-            <span>Idea</span>
-            <img src='/star.svg' alt='star' />
-            <span>Product</span>
-            <img src='/star.svg' alt='star' />
-            <span>Market</span>
-            <img src='/star.svg' alt='star' />
-            <span>Research</span>
-            <img src='/star.svg' alt='star' />
-            <span>Launch</span>
-            <img src='/star.svg' alt='star' />
+            <marquee>
+              <span className="banner-text">Idea</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Product</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Market</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Research</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Launch</span>
+              <img src='/star.svg' alt='star' />
+
+              <span className="banner-text">Idea</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Product</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Market</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Research</span>
+              <img src='/star.svg' alt='star' />
+              <span className="banner-text">Launch</span>
+              <img src='/star.svg' alt='star' />
+            </marquee>
           </div>
         </section>
 
@@ -413,7 +464,10 @@ export default function Home() {
                 successful Go To Market Strategy.
               </p>
               <div className='buttons'>
-                <button className='active'>
+                <button
+                  className={`canvas-btn ${!isHovered ? 'active' : ''}`}
+                  onMouseEnter={() => setIsHovered(false)}
+                >
                   GTM Canvas
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -421,12 +475,29 @@ export default function Home() {
                     viewBox='0 -960 960 960'
                     width='24px'
                     fill='#FFFFFF'
+                    style={{ visibility: !isHovered ? 'visible' : 'hidden' }}
                   >
                     <path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' />
                   </svg>
                 </button>
 
-                <button>GTM Handbook</button>
+                <button
+                  className={`hb ${isHovered ? 'active' : ''}`}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  GTM Handbook
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    height='24px'
+                    viewBox='0 -960 960 960'
+                    width='24px'
+                    fill='#FFFFFF'
+                    style={{ visibility: !isHovered ? 'hidden' : 'visible' }}
+                  >
+                    <path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

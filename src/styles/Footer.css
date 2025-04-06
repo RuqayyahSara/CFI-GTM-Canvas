@@ -1,6 +1,6 @@
 footer {
   font-family: 'Poppins';
-  background-color: #000000;
+  background-color: rgb(44, 42, 42);
   color: #fff;
   padding: 60px 20px 10px;
   border-top-right-radius: 45px;
@@ -11,7 +11,10 @@ footer {
     span.heading {
       display: block;
       color: var(--clr-orange);
+      font-size: larger;
+      font-weight: 500;
       margin: 5px;
+      margin-top: 50px;
     }
 
     ul {
@@ -22,6 +25,7 @@ footer {
 
       li {
         margin: 5px;
+        margin-top: 35px;
 
         a {
           display: inline-block;
@@ -39,19 +43,22 @@ footer {
 
       .formControl {
         input {
+          margin-top: 20%;
           border: none;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-          padding: 6px 15px;
-          max-width: 200px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          padding: 15px 15px;
+          max-width: 230px;
         }
       }
 
       button {
         background-color: var(--clr-orange);
         border: none;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        padding: 10.2px 15px;
+        margin-top: 45.5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         svg {
           fill: white;
@@ -62,9 +69,10 @@ footer {
 
   .logo {
     h1 {
-      font-size: 4rem;
+      font-size: 8rem;
       text-align: right;
-
+      margin-bottom: -50px;
+      margin-top: -70px;
       span {
         color: var(--clr-orange);
       }

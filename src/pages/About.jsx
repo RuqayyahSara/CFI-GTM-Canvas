@@ -25,11 +25,15 @@ export default function About() {
             </p>
           </div>
           <div className='right'>
-            <p className='first'>1 IN 6</p>
-            <p className='second'>
-              1 in 6 business schools/ organisations use GTM Canvas as their
-              primary GTM strategy tool
-            </p>
+            <div className='first'>
+              <h1>1 IN 6</h1>
+            </div>
+            <div className='second'>
+              <h3>
+                1 &nbsp;&nbsp;&nbsp;in &nbsp;&nbsp;&nbsp;6 &nbsp;&nbsp;&nbsp;business schools/ organisations use GTM Canvas as their
+                primary GTM strategy tool
+              </h3>
+            </div>
           </div>
         </section>
 
@@ -45,7 +49,7 @@ export default function About() {
               expert, <br /> we&apos;re excited to work together.
             </p>
             <button>
-              <span>Contact Us</span>
+              <span>Contact Us</span>&nbsp;
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 height='24px'

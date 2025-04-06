@@ -1,32 +1,67 @@
 .about {
   .excellence {
     padding: 20px;
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
 
     .left {
+      flex: 1;
+
       .heading {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 700;
+        line-height: 3.9rem;
       }
+
+    }
+
+    .left p {
+      line-height: 1.6rem;
+      justify-content: justify;
     }
 
     .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      min-height: 300px;
+
       .first,
       .second {
-        padding: 20px;
+        /* padding: 120px; */
         text-align: center;
-        margin: 0;
       }
 
       .first {
+        height: 300px;
         background-color: var(--clr-violet);
-        font-size: 3rem;
+        font-size: 7rem;
         color: white;
-        font-weight: 700;
+        /* padding-top: 20px; */
+        font-weight: bold;
+        vertical-align: middle;
+        /* margin-bottom: 1rem; */
+      }
+
+      .first h1 {
+        font-size:11rem;
+        margin-top: 10px;
       }
 
       .second {
+        height: 300px;
         background-color: var(--clr-light-yellow);
+        text-align: justify;
       }
+      .second h3{
+        padding: 0px 30px;
+        font-weight: normal;
+        line-height: 3rem;
+        font-size: 2.6rem;
+      }
+
     }
   }
 
@@ -52,7 +87,7 @@
 
       .heading {
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 3rem;
       }
 
       button {
@@ -62,14 +97,22 @@
         justify-content: center;
         color: white;
         border: none;
-        padding: 10px 20px;
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+        font-weight: 450;
         font-family: 'Poppins';
-        font-weight: 500;
         background-color: var(--clr-orange);
 
         svg {
           fill: white;
           rotate: -45deg;
+        }
+      }
+
+      button:hover {
+        svg {
+          transition: all 0.3s ease;
+          transform: rotate(45deg);
         }
       }
     }

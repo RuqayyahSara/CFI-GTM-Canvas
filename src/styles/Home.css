@@ -1,117 +1,301 @@
 .home {
   .hero {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 8%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0rem;
 
     .heroHeading {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-family: 'Poppins';
-      margin: 20px 0;
+      gap: 2rem;
+      width: 100%;
+      /* margin-bottom: 9rem; */
 
-      span {
-        font-size: 2.5rem;
-        font-weight: 600;
-      }
-
-      .line1,
-      .line2,
-      .line3 {
+      .line1 {
         display: flex;
         align-items: center;
-        gap: 5px;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 8rem;
+        font-weight: bold;
+        width: 100%;
+        position: relative;
+        margin-bottom: -2rem;
       }
 
-      .line3 {
-        text-decoration: underline;
+      /* Orange circle with arrow */
+      .line1>svg:first-child {
+        width: 180px;
+        height: auto;
+        transform: scale(1.5);
+      }
+
+      /* Text "Go-To" */
+      .line1>span:nth-child(2) {
+        margin-left: 4.5rem;
+        margin-right: 1.6rem;
+        /* margin: 0 2rem; */
+        z-index: 1;
+      }
+
+      /* Slant arrow icon */
+      .line1 .iconHorizontal {
+        transform: scale(1.5);
+        margin: 0 1.5rem;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      /* Blue and green circles group */
+      .line1>span:last-child {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 2rem;
+      }
+
+      .line1>span:last-child svg {
+        width: 60px;
+        height: 60px;
+        transform: scale(1.4);
+      }
+
+      /* Black X between circles */
+      .line1>span:last-child svg:nth-child(2) {
+        width: 35px;
+        height: 35px;
+        transform: scale(1.5);
+      }
+
+      svg {
+        height: auto;
+        width: auto;
+        transform: scale(2);
       }
 
       span.iconHorizontal {
         display: flex;
         flex-direction: column;
+        
+        transform: scale(2);
       }
 
       .alignBottom {
-        margin-top: 30px;
+        margin-top: 100px;
       }
+
+      .faster-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        justify-content: flex-start;
+        margin-top: -3rem;
+        padding-left: 280px;
+        overflow: visible;
+        gap: 2rem;
+
+      }
+
+      .faster-container .semicircles {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.9rem;
+        margin-left: -15.7rem;
+      }
+
+      /* Semicircles styling */
+      .faster-container .semicircle-green {
+        width: 40px;
+        height: 192px;
+      }
+
+      .faster-container .semicircle-purple {
+        width: 40px;
+        height: 192px;
+        /* margin: 1.2rem; */
+        /* Space between purple semicircle and "Faster" text */
+      }
+
+      /* Faster text */
+      .faster-container>span {
+        font-size: 8rem;
+        font-weight: bold;
+        position: relative;
+      }
+
+
+      /* Underline SVG positioning */
+      .faster-container .underline {
+        position: absolute;
+        bottom: 30px;
+        left: 170px;
+        width: 320px;
+        height: 5px;
+      }
+
+      /* Asterisk SVG positioning */
+      .faster-container .alignBottom {
+        width: 63px;
+        height: 23px;
+        transform: scale(1.5);
+      }
+    }
+
+    .heroHeading img {
+      height: auto;
+      width: auto;
+      transform: scale(2);
     }
 
     .heroSubHeading {
       font-size: 2rem;
       font-weight: bold;
-
-      span {
-        color: var(--clr-orange);
-        font-style: italic;
-      }
+      text-align: left;
     }
 
     .heroParagraph {
-      padding: 20px;
-      text-align: center;
-      max-width: 600px;
-      color: rgba(35, 35, 35, 0.79);
-      font-weight: 400;
+      position: absolute;
+      left: 0;
+      /* width: 400px;  */
+      padding: 45px;
+      z-index: 2;
+      text-align: left;
+      max-width: 300px;
+      font-size: 0.7rem;
+      line-height: 1.5;
+    }
 
-      p {
-        color: var(--clr-green);
+    .paragraph-container {
+      max-width: 100%;
+    }
+
+    /* Media query to maintain position */
+    @media (min-width: 1440px) {
+      .heroParagraph {
+        left: calc((100% - 1440px) / 2);
+        /* Center align with max width */
       }
     }
 
     .cta {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: -5rem;
+
       button {
-        background-color: #232323;
-        color: white;
         display: flex;
-        align-items: center;
+        /* align-items: left; */
+        gap: 1rem;
+        padding: 0.8rem 5.3rem;
+        font-size: 2.8rem;
+        font-weight: 450;
+        background: #232323;
+        color: white;
         border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        margin-bottom: 40px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 160px;
 
         svg {
-          fill: white;
-          rotate: -45deg;
+          width: 24px;
+          height: 24px;
         }
       }
+
+      button:hover {
+        svg {
+          transition: all 0.3s ease;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .triangles {
+      display: flex;
+      margin-top: 40px;
+      margin-left: 2.4rem;
+      /* Space between button and triangles */
+    }
+
+    .triangles svg {
+      width: 120px;
+      height: 120px;
     }
   }
 
   .companiesSection {
     text-align: center;
     background-color: var(--clr-skin);
-    padding: 30px 15px;
+    padding: 50px 15px;
     margin: 30px 0 50px;
+  }
 
-    span {
-      color: var(--clr-orange);
-      background-color: white;
-      padding: 10px;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.5rem;
-      display: inline-block;
+  .companiesSection span {
+    color: var(--clr-orange);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .companies-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+
+  .companies-track {
+    display: flex;
+    width: max-content;
+    /* Adjusts width dynamically */
+    animation: scroll 1s linear infinite;
+  }
+
+  .companies {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .companies img {
+    height: 40px;
+    padding-right: 2rem;
+    object-fit: contain;
+  }
+
+  /* Smooth scrolling animation */
+  @keyframes scroll {
+    50% {
+      transform: translateX(0%);
     }
 
-    .companies {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-
-      img {
-        width: 100px;
-        height: auto;
-        object-fit: cover;
-      }
+    100% {
+      transform: translateX(-100%);
     }
   }
+
+  /* Optional: Pause animation on hover */
+  .companies-marquee:hover .companies-track {
+    animation-play-state: paused;
+  }
+
 
   .workshops {
     padding: 10px 30px;
@@ -123,15 +307,16 @@
         padding: 10px 15px;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 4rem;
         display: inline-block;
         margin-bottom: 20px;
       }
 
       .subHeading {
-        font-weight: 600;
-        font-size: 1.5rem;
         display: block;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
 
       div {
@@ -154,17 +339,25 @@
 
         .content {
           color: var(--clr-light-gray);
+          line-height: 1.5rem;
         }
       }
 
       button {
-        border: 2px solid black;
-        border-radius: 5px;
+        border: 2.5px solid black;
+        border-radius: 10px;
         background-color: white;
         color: black;
-        padding: 10px 15px;
-        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        font-weight: semibold;
         display: block;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: rgb(44, 42, 42);
+        color: white
       }
     }
 
@@ -182,17 +375,18 @@
       .heading {
         background-color: var(--clr-purple);
         font-family: 'Poppins';
-        padding: 10px 15px;
+        padding: 10px 30px;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 4rem;
         display: inline-block;
         margin-bottom: 2px;
       }
 
       .subHeading {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
 
       .title {
@@ -203,6 +397,7 @@
 
       .content {
         color: var(--clr-light-gray);
+        line-height: 1.5rem;
       }
 
       ul {
@@ -214,6 +409,7 @@
           display: flex;
           align-items: center;
           gap: 5px;
+          line-height: 2rem;
           color: var(--clr-light-gray);
 
           svg {
@@ -223,14 +419,22 @@
       }
 
       button {
-        border: 2px solid black;
-        border-radius: 5px;
+        border: 2.5px solid black;
+        border-radius: 10px;
         background-color: white;
         color: black;
-        padding: 10px 15px;
-        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        font-weight: semibold;
         display: block;
         margin: 20px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: rgb(44, 42, 42);
+        color: white;
       }
     }
 
@@ -249,18 +453,20 @@
         padding: 10px 15px;
         border-radius: 10px;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 4rem;
         display: inline-block;
         margin-bottom: 2px;
       }
 
       .subHeading {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
       }
 
       .earn {
         font-weight: 500;
+        line-height: 1.5rem;
       }
 
       .title {
@@ -272,18 +478,27 @@
       ul {
         li {
           color: var(--clr-light-gray);
+          line-height: 1.5rem;
         }
       }
 
       button {
-        border: 2px solid black;
-        border-radius: 5px;
+        border: 2.5px solid rgb(44, 42, 42);
+        border-radius: 10px;
         background-color: white;
-        color: black;
-        padding: 10px 15px;
-        font-weight: bold;
+        color: rgb(44, 42, 42);
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        font-weight: semibold;
         display: block;
         margin: 20px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: rgb(44, 42, 42);
+        color: white;
       }
     }
   }
@@ -295,18 +510,40 @@
 
     div {
       background-color: white;
-      rotate: -5deg;
+      rotate: -15deg;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 0px;
+      /* padding-top: -120px; */
       overflow: hidden;
-      border-radius: 5px;
       font-family: 'Poppins';
       font-weight: 500;
+      font-size: 2.5rem;
+      display: flex;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      /* padding: 20px 0; */
+      /* padding-bottom: 13px; */
+      animation: scroll 10s linear infinite;
 
       img {
-        height: 34px;
-        width: 34px;
+        height: 45px;
+        width: 10%;
+        padding-left: 50px;
+        padding-right: 50px;
+        transform: translateY(-2px);
+        object-fit: contain;
+      }
+
+      @keyframes scroll {
+        50% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(100%);
+        }
       }
     }
   }
@@ -332,7 +569,7 @@
         height: 5px;
         width: 5px;
         border-radius: 50%;
-        background-color: black;
+        background-color: rgb(44, 42, 42);
 
         &.active {
           background-color: var(--clr-orange);
@@ -360,27 +597,35 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
       .content {
+        margin-top: -105px;
+
         .heading {
           font-family: 'Poppins';
           font-weight: 700;
-          font-size: 2rem;
+          font-size: 3rem;
           display: inline-block;
-          margin-bottom: 2px;
+          /* margin-bottom: 2px; */
         }
 
         .text {
           color: var(--clr-light-gray);
+          line-height: 1.8rem;
+          max-width: 380px;
+          font-size: 1.3rem;
+          justify-content: justify;
         }
 
         .buttons {
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 30px;
-          background-color: black;
-          padding: 6px;
+          border-radius: 40px;
+          background-color: rgb(44, 42, 42);
+          padding: 8px;
           font-family: 'Poppins';
+          font-size: 1.5rem;
           width: max-content;
+          margin-top: 50px;
 
           button {
             border-radius: inherit;
@@ -390,7 +635,8 @@
             color: white;
             background-color: inherit;
             border: none;
-            padding: 5px 10px;
+            padding: 17px 30px;
+            cursor: pointer;
 
             &.active {
               background-color: var(--clr-orange);
@@ -399,6 +645,15 @@
                 fill: white;
                 rotate: -45deg;
               }
+            }
+          }
+
+          button:hover {
+            background-color: var(--clr-orange);
+
+            svg {
+              fill: white;
+              rotate: -45deg;
             }
           }
         }
@@ -411,9 +666,6 @@
   .home {
     .hero {
       .heroHeading {
-        span {
-          font-size: 3.5rem;
-        }
 
         .line1,
         .line2,
@@ -521,4 +773,93 @@
       }
     }
   }
+}
+
+@media (max-width: 1024px) {
+  .heroHeading {
+    padding: 0 5%;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line2 img,
+  .line3 img {
+    width: 80%;
+    height: auto;
+  }
+
+  .line2>span,
+  .line3>span {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .line2>span,
+  .line3>span {
+    font-size: 4rem;
+  }
+
+  .line2 img,
+  .line3 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .line1,
+  .line2,
+  .line3 {
+    padding-left: 0;
+  }
+
+  .line2>span,
+  .line3>span {
+    font-size: 3rem;
+  }
+}
+
+.market-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  overflow: visible;
+}
+
+/* Text "Market" */
+.market-container>span {
+  font-size: 8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* Yellow key image */
+.market-container>img {
+  /* width: 150px; */
+  height: auto;
+  object-fit: contain;
+  margin-right: -1rem;
+  /* transform: scale(1); */
+  transform-origin: left center;
+  max-width: none;
+  min-width: 170px;
+}
+
+.banner-text {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(-2px);
+  /* Adjust this value to move text up/down */
+}
+
+.banner img {
+  vertical-align: middle;
 }
