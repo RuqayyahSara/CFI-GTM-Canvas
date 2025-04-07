@@ -10,6 +10,44 @@ export default function Home() {
     <>
       <Navbar />
       <div className='home'>
+        {/* For mobile view */}
+        <section className='mobile-hero'>
+          <img src='/hero.png' alt='Hero' />
+          <br/>
+          <div className='heroParagraph'>
+            <div className='heroSubHeading'>
+              <span>GTM</span><span style={{ fontStyle: "italic", color: "rgb(254, 107, 54)" }}>Canvas</span>
+            </div>
+            <div className='paragraph-container'>
+              <span>
+                Go to Market (GTM) Canvas is the strategic way to develop your Go
+                to Market Strategy for your startup/idea. This works well for all
+                idea stage products and services across all sectors and
+                industries.
+              </span>
+              <p>[open source]</p>
+            </div>
+          </div>
+
+          <div className="cta">
+            <button>
+              <span>Download&nbsp;</span>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='20'
+                height='20'
+                viewBox='0 0 24 24'
+                fill='none'
+              >
+                <path
+                  d='M1.27465 19.1992C0.461568 19.9777 0.433564 21.268 1.2121 22.0811C1.99065 22.8941 3.28091 22.9221 4.094 22.1436L1.27465 19.1992ZM23.3119 2.91561C23.3364 1.79016 22.4438 0.857999 21.3184 0.833573L2.97809 0.435519C1.85264 0.411093 0.920485 1.30365 0.896059 2.4291C0.871632 3.55455 1.76419 4.48671 2.88964 4.51113L19.1921 4.86496L18.8383 21.1674C18.8138 22.2929 19.7064 23.225 20.8318 23.2495C21.9573 23.2739 22.8895 22.3813 22.9139 21.2559L23.3119 2.91561ZM4.094 22.1436L22.6838 4.3436L19.8645 1.39916L1.27465 19.1992L4.094 22.1436Z'
+                  fill='white'
+                />
+              </svg>
+            </button>
+            </div>
+        </section>
+
         <section className='hero'>
           <div className='heroHeading'>
             <div className='line1'>
@@ -220,11 +258,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="companiesSection">
+         <section className="companiesSection">
           <span>250+ Companies Use GTM Canvas including</span>
           <div className="companies-marquee">
             <div className="companies-track">
-              {/* Double the images to create seamless loop */}
               <div className="companies">
                 <marquee>
                   <img src="/Leadmagic.svg" alt="Leadmagic" />
@@ -242,8 +279,8 @@ export default function Home() {
                 </marquee>
               </div>
             </div>
-          </div>
-        </section>
+            </div>
+        </section> 
 
         <section className='workshops'>
           <div className='workshopContent'>
