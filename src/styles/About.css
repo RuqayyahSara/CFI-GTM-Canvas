@@ -2,71 +2,90 @@
   .excellence {
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
     gap: 2rem;
 
     .left {
       flex: 1;
+      text-align: left;
 
       .heading {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
-        line-height: 3.9rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
       }
-
     }
 
     .left p {
-      line-height: 1.6rem;
-      justify-content: justify;
+      line-height: 1.8rem;
+      text-align: left;
+      margin-bottom: 1rem;
     }
 
     .right {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100%;
-      min-height: 300px;
+      width: 100%;
 
       .first,
       .second {
-        /* padding: 120px; */
         text-align: center;
+        margin-bottom: 0;
       }
 
       .first {
-        height: 300px;
+        height: auto;
         background-color: var(--clr-violet);
-        font-size: 7rem;
+        font-size: 3rem;
         color: white;
-        /* padding-top: 20px; */
         font-weight: bold;
-        vertical-align: middle;
-        /* margin-bottom: 1rem; */
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .first h1 {
-        font-size:11rem;
-        margin-top: 10px;
+        font-size: 5rem;
+        margin-top: 0;
+        line-height: 1;
+        margin: 0;
+          text-align: center;
       }
 
       .second {
-        height: 300px;
+        height: auto;
         background-color: var(--clr-light-yellow);
-        text-align: justify;
-      }
-      .second h3{
-        padding: 0px 30px;
-        font-weight: normal;
-        line-height: 3rem;
-        font-size: 2.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        text-align: center;
       }
 
+      .second h3 {
+        margin: 0;
+          text-align: center;
+        padding: 0 15px;
+        font-weight: normal;
+        line-height: 2.2rem;
+        font-size: 1.8rem;
+        color: #333;
+      }
     }
   }
 
   .section2 {
     padding: 20px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
 
   .section3 {
@@ -76,18 +95,23 @@
     .section3Container {
       background-color: #edefec;
       border-radius: 20px;
-      padding: 40px 20px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      gap: 20px;
+      gap: 15px;
       box-shadow: 0px 1.92px 1.92px 0px #00000040;
 
       .heading {
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1rem;
       }
 
       button {
@@ -97,8 +121,8 @@
         justify-content: center;
         color: white;
         border: none;
-        padding: 1rem 2rem;
-        font-size: 1.7rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
         font-weight: 450;
         font-family: 'Poppins';
         background-color: var(--clr-orange);
@@ -106,30 +130,35 @@
         svg {
           fill: white;
           rotate: -45deg;
-        }
-      }
-
-      button:hover {
-        svg {
-          transition: all 0.3s ease;
-          transform: rotate(45deg);
+          width: 20px;
+          height: 20px;
         }
       }
     }
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .about {
     .excellence {
-      padding: 20px 100px;
-
-      display: flex;
+      flex-direction: row;
+      padding: 20px 40px;
+      gap: 40px;
       align-items: center;
-      gap: 60px;
 
       .left {
         flex: 1;
+        text-align: left;
+
+        .heading {
+          font-size: 3.5rem;
+          line-height: 4.2rem;
+        }
+      }
+
+      .left p {
+        text-align: left;
+        font-size: 1.1rem;
       }
 
       .right {
@@ -137,22 +166,70 @@
 
         .first,
         .second {
+          margin-bottom: 0;
           padding: 40px;
         }
 
         .first {
-          font-size: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 350px;
+        }
+
+        .first h1 {
+          font-size: 11rem;
+          margin: 0;
+          text-align: center;
         }
 
         .second {
-          font-size: 2rem;
+          height: 350px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .second h3 {
+          font-size: 2.6rem;
+          line-height: 3rem;
+          margin: 0;
+          text-align: center;
         }
       }
     }
 
+    .section3 {
+      .section3Container {
+        padding: 40px;
+
+        .heading {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        button {
+          padding: 1rem 2rem;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    .excellence {
+      padding: 20px 100px;
+      gap: 60px;
+    }
+
     .section2,
     .section3 {
-      padding: 20px 60px;
+      padding: 20px 100px;
     }
 
     .section3 {

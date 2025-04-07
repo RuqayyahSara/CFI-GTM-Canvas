@@ -800,15 +800,93 @@
 }
 
 @media (max-width: 768px) {
-
-  .line2>span,
-  .line3>span {
-    font-size: 4rem;
+  .workshops {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
   }
 
-  .line2 img,
-  .line3 img {
+  .workshops .workshopContent {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+
+  .workshops .workshopContent > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .workshops .workshopContent .left,
+  .workshops .workshopContent .right {
+    width: 100%;
+  }
+
+  .workshopImage {
+    width: 100%;
+    order: 2;  /* Ensure image comes after content */
+  }
+
+  .handbook {
+    padding: 20px;
+    
+    .handbookContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      
+      .content {
+        .heading {
+          margin-top: 100px;
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 40px;
+          background-color: rgb(44, 42, 42);
+          padding: 8px;
+          width: 100%; /* Full container width */
+          max-width: 450px; /* Limit maximum width */
+          margin: 50px auto 0; /* Center horizontally */
+          
+          button {
+            flex: 1; /* Equal width buttons */
+            border-radius: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: inherit;
+            border: none;
+            padding: 17px 20px; /* Adjusted padding */
+            cursor: pointer;
+            font-size: 1rem; 
+            
+            &.active {
+              background-color: var(--clr-orange);
+
+              svg {
+                fill: white;
+                rotate: -45deg;
+              }
+            }
+          }
+          
+          button:hover {
+            background-color: var(--clr-orange);
+
+            svg {
+              fill: white;
+              rotate: -45deg;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

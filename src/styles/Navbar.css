@@ -3,7 +3,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-family: 'Poppins';
-  margin: 20px 10px;
+  padding: 20px;
 
   a {
     text-decoration: none;
@@ -11,10 +11,10 @@ nav {
   }
 
   .logo {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     flex-shrink: 0;
     font-weight: bold;
-    margin-left: -50px;
+    margin-left: 0;
     
     span {
       color: var(--clr-orange);
@@ -35,7 +35,8 @@ nav {
     li {
       a {
         display: inline-block;
-        padding: 10px 5px;
+        padding: 10px;
+        font-size: 0.8rem;
 
         &.highlight {
           background-color: var(--clr-orange);
@@ -49,14 +50,48 @@ nav {
 
 @media (min-width: 600px) {
   nav {
-    margin: 40px 100px;
+    padding: 30px 50px;
+
+    .logo {
+      font-size: 3.5rem;
+    }
+
+    ul {
+      gap: 15px;
+
+      li {
+        a {
+          padding: 10px 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 40px 100px;
+
+    .logo {
+      font-size: 4.5rem;
+      margin-left: -50px;
+    }
 
     ul {
       gap: 20px;
+      border: none;
+      padding: 0;
 
       li {
         a {
           padding: 10px 15px;
+
+          &.highlight {
+            background-color: var(--clr-orange);
+            color: white;
+            border-radius: 5px;
+          }
         }
       }
     }

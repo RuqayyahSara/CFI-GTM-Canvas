@@ -243,8 +243,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>;
-
+        </section>
 
         <section className='workshops'>
           <div className='workshopContent'>
